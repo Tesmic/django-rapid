@@ -25,7 +25,7 @@ SECRET_KEY = '!-+gyqvgpbp6=oy=sy8ghunh=p@bz%9*%$5-okc5dustrx=&8&'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['`rapid-api-practicetj.herokuapp.com']
+ALLOWED_HOSTS = ['rapid-api-practicetj.herokuapp.com']
 # Heroku: Update database configuration from $DATABASE_URL. 
 import dj_database_url 
 db_from_env = dj_database_url.config(conn_max_age=500) DATABASES['default'].update(db_from_env)
