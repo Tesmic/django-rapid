@@ -26,7 +26,9 @@ SECRET_KEY = '!-+gyqvgpbp6=oy=sy8ghunh=p@bz%9*%$5-okc5dustrx=&8&'
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
+# Heroku: Update database configuration from $DATABASE_URL. 
+import dj_database_url 
+db_from_env = dj_database_url.config(conn_max_age=500) DATABASES['default'].update(db_from_env)
 
 # Application definition
 
