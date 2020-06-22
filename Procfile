@@ -1,1 +1,1 @@
-web: gunicorn mpgWebApp.wsgi --log-file -
+web: gunicorn rapidapipractice.wsgi --log-file -
